@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+    <script src="https://kits.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <title>Lucky Banda</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="LOGO.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">My Services</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span> Lucky </span> <br> Banda From Malawi</h1>
+            </div>
+        </div>
+    </div>
+
+<!-------------------about---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="bg2.png" width="250px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p>Software Development is my Career, Passion and Hobby. My journey in this Career started back in 2017 after i wrote my first "Hello World!" code in plain HTML. I soon got introduced to C++ and Python before i learnt more front-end web development using CSS and Javascript.
+                        After some few months of front-end development, i got introduced to back-end devlopment using PHP. Now i can develop mobile apps using Kotlin, Swift and Flutter.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Front and Back End Development of Websites</li>
+                            <li><span>Desktop App Development</span><br>Windows, MacOS and Linux App Development</li>
+                            <li><span>Moblie App Development</span><br>Building Android/IOS Apps for you</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current </span><br>Freelance Developer</li>
+                            <li><span>2021 - 2022 </span><br>Junior Developer at Breakshell One</li>
+                            <li><span>2017 - 2021 </span><br> Personal Project Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>W3 Schools</li>
+                            <li><span>2019</span><br>Online Tutorials</li>
+                            <li><span>2017</span><br>GIS Student at MUST</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------------Services-------------->
+<div class="services" id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Website Development</h2>
+                <p>I can create beautiful web designs and interfaces for your different businesses, organisation and even personal websites to showcase your skills. I can also develop back end apps that work with your desired websites using APIs that i can code using PHP, Python, Javascript and many more programming languages.</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Desktop App Development</h2>
+                <p>Desktop or Stand Alone apps have different types of platforms such as Windows, Mac OS and Linux. Lucky for you i know how to create apps that run these platforms and even cross platform apps.</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile"></i>
+                <h2>Mobile App Development</h2>
+                <p>Due to the increased use of technology on mobile phones nowadays, Mobile apps are more common that any other type of device that can be used for communication. Get your own Custom made mobile apps at the most affordable prices.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------------------Portfolio------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="proj.png" alt="">
+                <div class="layer">
+                    <h3>Social Network App</h3>
+                    <p>A Social Networking App that is still in <br> development.
+                        Check it out now.
+                    </p>
+                    <a href="https://lucky-code-cloud.github.io/brothers/"><i class="fa-solid fa-external-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="proj2.png" alt="">
+                <div class="layer">
+                    <h3>Learing Management System </h3>
+                    <p>An LMS that is also still in development. <br>
+                        Check it out now.
+                    </p>
+                    <a href="https://lucky-code-cloud.github.io/learnwithlucky"><i class="fa-solid fa-external-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="proj3.png" alt="">
+                <div class="layer">
+                    <h3>Online Music Player</h3>
+                    <p>An  Awesome app that i developed so that <br> i can listen to my favorite music.
+                        <br> Check it out now.
+                    </p>
+                    <a href="https://lucky-code-cloud.github.io/player/"><i class="fa-solid fa-external-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <button class="btn1" onclick="showemmore('more')">See More</button>  
+
+
+        <div class="more" id="more">
+            <div class="work-list">
+                <div class="work">
+                    <img src="mvc.png" alt="">
+                    <div class="layer">
+                        <h3>Model View Controller Framework</h3>
+                        <p>An Architectual pattern using PHP <br> development.
+                            Check it out now.
+                        </p>
+                        <a href="https://lucky-code-cloud.github.io/brothers/"><i class="fa-solid fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="login.png" alt="">
+                    <div class="layer">
+                        <h3>Learing Management System </h3>
+                        <p>This projects showcases my skills in Authentication and Security in login systems. <br>
+                            Check it out now.
+                        </p>
+                        <a href="https://lucky-code-cloud.github.io/learnwithlucky"><i class="fa-solid fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="blog.png" alt="">
+                    <div class="layer">
+                        <h3>Blog Web App</h3>
+                        <p>This is a blog site i developed for one of my clients
+                            <br> Check it out now.
+                        </p>
+                        <a href="https://lucky-code-cloud.github.io/player/"><i class="fa-solid fa-external-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn1" onclick="hideem('more')">Hide More</button>
+        </div>
+        
+
+
+    </div>
+</div>
+  
+  
+
+
+<!--------------Contact-------------->
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> luckyharveybanda@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>0999 594 385</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=100071465494045"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/LuckyBanda96"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/@learnwithlucky5381"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/lucky-banda-343042227/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="CV.docx.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name ="submit-to-google-sheet">
+                    <h3>Talk to me now!</h3>
+                    <br>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy; <span>Lucky Banda</span></p>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css" integrity="sha512-+ouAqATs1y4kpPMCHfKHVJwf308zo+tC9dlEYK9rKe7kiP35NiP+Oi35rCFnc16zdvk9aBkDUtEO3tIPl0xN5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+<script src="index.js"></script>
+
+</body>
+</html>
